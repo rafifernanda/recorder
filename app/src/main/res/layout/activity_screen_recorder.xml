@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg"
+    tools:context=".Activities.ScreenRecorder">
+
+
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:textOff="Record"
+        android:textOn="Stop"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#405A7F"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffeaa7"
+        />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="BACK"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#405A7F"
+        android:background="#ffeaa7"
+        />
+    <TextView
+        android:id="@+id/tulis"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Don't click 'back'"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textColor="#405A7F"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+
+    <VideoView
+        android:layout_above="@+id/toggleButton"
+        android:id="@+id/videoView"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
